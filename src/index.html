@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME LIBRARY -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CUSTOM STYLESHEETS -->
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- SITE TITLE -->
+    <title>Varun rana</title>
+  </head>
+  <body>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div
+      class="scroll_top fixed bottom-10 right-10 bg-gray-800 text-yellow-600 p-2 rounded-sm cursor-pointer active:scale-75 transition-all duration-200"
+    >
+      back to top
+    </div>
+    <!-- END -->
+    <main class="w-full">
+      <!-- SIDEBAR -->
+      <aside class="sidebar md:fixed md:align-top bg-white z-40 gap-5 py-3">
+        <div class="sidebar_logo block text-center">
+          <a
+            href="#"
+            class="text-3xl font-semibold hover:text-yellow-600 transition-all duration-200"
+            ><span class="text-yellow-600 font-black">VR.</span></a
+          >
+        </div>
+
+        <button
+          class="inline-flex fixed bottom-10 left-5 z-50 bg-gray-800 text-yellow-600 p-2 rounded-md cursor-pointer active:scale-75 transition-all duration-200 lg:hidden font-medium tracking-wider"
+          data-target="navigation"
+        >
+          Menu &mumap;
+        </button>
+        <div
+          class="h-auto lg:flex flex-col items-center justify-center hidden"
+          id="navigation"
+        >
+          <ul
+            class="flex flex-col items-center justify-center w-full sibling-fade"
+          >
+            <li class="w-full mt-4 text-center">
+              <a
+                href="#"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="dark"
+                class="inline-block hover-underline-animation relative home text-base font-semibold p-4 hover:text-yellow-600 focus:text-yellow-600 leading-snug tracking-wide capitalize"
+                >Home</a
+              >
+            </li>
+            <li class="w-full mt-4 text-center">
+              <a
+                href="#about"
+                class="inline-block hover-underline-animation relative text-base font-semibold p-4 hover:text-yellow-600 focus:text-yellow-600 leading-snug tracking-wide capitalize"
+                >About</a
+              >
+            </li>
+            <li class="w-full mt-4 text-center">
+              <a
+                href="#skills"
+                class="inline-block hover-underline-animation relative text-base font-semibold p-4 hover:text-yellow-600 focus:text-yellow-600 leading-snug tracking-wide capitalize"
+                >skills</a
+              >
+            </li>
+            <li class="w-full mt-4 text-center">
+              <a
+                href="#projects"
+                class="inline-block hover-underline-animation relative text-base font-semibold p-4 hover:text-yellow-600 focus:text-yellow-600 leading-snug tracking-wide capitalize"
+                >projects</a
+              >
+            </li>
+            <li class="w-full mt-4 text-center">
+              <a
+                href="#contact"
+                class="inline-block hover-underline-animation relative text-base font-semibold p-4 hover:text-yellow-600 focus:text-yellow-600 leading-snug tracking-wide capitalize"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-center gap-5">
+          <span
+            class="p-3 flex items-center justify-center hover:rotate-12 transition-all duration-500 rounded-sm hover:shadow-xl hover:border-none hover:text-yellow-600 cursor-pointer"
+            ><a
+              href="https://www.facebook.com/rana5241"
+              target="_blank"
+              class="flex items-center justify-center"
+            >
+              <i class="fab fa-facebook-f"></i> </a
+          ></span>
+          <span
+            class="p-3 flex items-center justify-center hover:rotate-12 transition-all duration-500 rounded-sm hover:shadow-xl hover:border-none hover:text-yellow-600 cursor-pointer"
+            ><a
+              href="https://www.instagram.com/varun8048/"
+              target="_blank"
+              class="flex items-center justify-center"
+            >
+              <i class="fab fa-instagram"></i> </a
+          ></span>
+          <span
+            class="p-3 flex items-center justify-center hover:rotate-12 transition-all duration-500 rounded-sm hover:shadow-xl hover:border-none hover:text-yellow-600 cursor-pointer"
+            ><a href="#" class="flex items-center justify-center">
+              <i class="fab fa-linkedin-in"></i> </a
+          ></span>
+          <span
+            class="p-3 flex items-center justify-center hover:rotate-12 transition-all duration-500 rounded-sm hover:shadow-xl hover:border-none hover:text-yellow-600 cursor-pointer"
+            ><a
+              href="https://github.com/varunrana123"
+              target="_blank"
+              class="flex items-center justify-center"
+            >
+              <i class="fab fa-github"></i> </a
+          ></span>
+        </div>
+      </aside>
+
+      <!-- =========================== HEADER =========================== -->
+      <section class="main lg:align-top">
+        <div id="particles-js" class="relative">
+          <!-- ========================== HEADER =========================== -->
+          <header class="header lg:p-8 p-4 z-30">
+            <div class="flex flex-col items-center w-full p-4">
+              <div>
+                <h2 class="text-white font-black capitalize tracking-wide">
+                  varun rana
+                </h2>
+              </div>
+              <div>
+                <small class="text-white tracking-widest text-base capitalize"
+                  >Self-Taught developer</small
+                >
+              </div>
+              <div class="mt-5">
+                <a
+                  href="#contact"
+                  class="bg-yellow-600 text-white text-xs capitalize tracking-widest p-2 font-semibold rounded-sm active:scale-95 border-none outline-none"
+                >
+                  Hire me !
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ------------------------------ END ------------------------------ -->
+        </div>
+
+        <!-- ====================== MAIN SECTION  ========================= -->
+        <section class="relative lg:p-32 py-20 p-4 border-b" id="about">
+          <h2
+            class="capitalize absolute top-0 left-0 p-3 bg-yellow-600 font-medium text-white tracking-widest text-base rounded-br-lg"
+          >
+            about me
+          </h2>
+
+          <section class="bg-white dark:bg-gray-800">
+            <div class="container px-6 py-8 mx-auto">
+              <div class="items-center lg:flex justify-center gap-10">
+                <div class="lg:w-1/2">
+                  <h2
+                    class="text-3xl font-bold text-gray-800 dark:text-gray-100 capitalize"
+                  >
+                    Who I am
+                  </h2>
+
+                  <p
+                    class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md capitalize"
+                  >
+                    Hi I am Varun , self
+                    <a
+                      class="font-bold text-blue-600 dark:text-blue-400 capitalize"
+                      href="#"
+                      >@BakaTeam</a
+                    >
+                    , Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Illum in sed non alias, fugiat, commodi nemo ut fugit
+                    corrupti dolorem sequi ex veniam consequuntur id, maiores
+                    beatae ipsa omnis aliquam?
+                  </p>
+
+                  <div class="inline-block items-center mt-6">
+                    <a
+                      class="inline-block text-lg"
+                      href="https://www.facebook.com/rana5241"
+                      target="_blank"
+                      aria-label="Facebook"
+                      ><i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                      class="inline-block text-lg"
+                      href="#"
+                      target="_blank"
+                      aria-label="Twitter"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a
+                      class="inline-block text-lg"
+                      href="#"
+                      target="_blank"
+                      aria-label="Linkdin"
+                      ><i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                      class="inline-block text-lg"
+                      href="https://github.com/varunrana123"
+                      target="_blank"
+                      aria-label="Github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mt-8 lg:mt-0 lg:w-1/2">
+                  <div class="flex items-center justify-center lg:justify-end">
+                    <div class="max-w-lg">
+                      <img
+                        class="object-cover object-center w-full h-64 rounded-md shadow"
+                        src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- things i learned -->
+        <section class="learning_section relative border-b" id="skills">
+          <div
+            class="text-center text-base absolute top-0 left-0 bg-yellow-600 text-white font-medium tracking-widest capitalize p-3 rounded-br-lg"
+          >
+            skills
+          </div>
+          <div class="lg:py-32 py-20 p-4">
+            <div class="mt-10 max-w-4xl m-auto">
+              <div
+                class="grid lg:grid-cols-3 grid-cols-2 overflow-hidden gap-0.5"
+              >
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>HTML</span>
+                  <img
+                    src="../logo/html.svg"
+                    width="100px"
+                    height="100px"
+                    alt="html"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>CSS</span>
+                  <img
+                    src="../logo/css.svg"
+                    width="100px"
+                    height="100px"
+                    alt="css"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>JAVASCRIPT</span>
+                  <img
+                    src="../logo/javascript-programming-language.svg"
+                    width="100px"
+                    height="100px"
+                    alt="javascript"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>NODEJS</span>
+                  <img
+                    src="../logo/node-js.svg"
+                    width="100px"
+                    height="100px"
+                    alt="node-js"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>MONGODB</span>
+                  <img
+                    src="../logo/mongodb.svg"
+                    width="60px"
+                    height="100px"
+                    alt="mongodb"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>TAILWIND CSS</span>
+                  <img
+                    src="../logo/tailwind-css.svg"
+                    width="100px"
+                    height="100px"
+                    alt="tailwind-css"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>React Js</span>
+                  <img
+                    src="../logo/react-js.svg"
+                    width="100px"
+                    height="100px"
+                    alt="react-js"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>git</span>
+                  <img
+                    src="../logo/git.svg"
+                    width="100px"
+                    height="100px"
+                    alt="git"
+                  />
+                </div>
+                <div
+                  class="cards border border-dotted p-4 flex items-center justify-center duration-300"
+                >
+                  <span>FIGMA</span>
+                  <img
+                    src="../logo/figma.svg"
+                    width="70px"
+                    height="100px"
+                    alt="figma"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK SECTION -->
+
+        <section class="learning_section relative border-b" id="projects">
+          <div
+            class="text-center text-base absolute top-0 left-0 bg-yellow-600 text-white font-medium tracking-widest capitalize p-3 rounded-br-lg"
+          >
+            projects
+          </div>
+          <div class="lg:py-32 p-4">
+            <div
+              class="text-center lg:text-3xl text-2xl font-semibold capitalize tracking-widest text-gray-600"
+            >
+              my Projects
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ FOOTER =========================== -->
+        <footer class="mt-10">
+          <div class="bg-gray-900 py-20">
+            <div
+              class="flex items-center justify-center text-white tracking-wider"
+            >
+              <strong>2022 &copy; Copyright</strong>
+              <a href="#" class="text-yellow-600 font-medium"> VarunRana.com</a>
+            </div>
+          </div>
+        </footer>
+        <!-- ============================ END =========================== -->
+      </section>
+    </main>
+
+    <!-- ionicons js added -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- script file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

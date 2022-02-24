@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+/* toggle class for navigation */
+.active {
+  background-color: #fff;
+  box-shadow: 0px 3px 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.9s ease-in;
+}
+
+/* show menu on phone */
+.show {
+  display: block;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca8a04;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.sibling-fade {
+  visibility: hidden;
+}
+.sibling-fade > * {
+  visibility: visible;
+}
+.sibling-fade > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+.sibling-fade:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+.sibling-fade > *:hover {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0ms, 0ms;
+}
+
+/* END */
+
+/* particles effects  */
+
+#particles-js {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.749),
+      rgba(0, 0, 0, 0.768)
+    ),
+    url("../dp/hero.png") no-repeat top center/cover;
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 6rem;
+}
+/* site logo font family */
+.navbar h3 {
+  font-family: "Cinzel", serif;
+  color: #000;
+}
+
+.active.navbar a {
+  color: #000;
+  font-weight: 500;
+}
+
+/* aside or sidebar */
+.sidebar {
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  #particles-js {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+  }
+
+  .header h2 {
+    font-size: 3.3em;
+  }
+
+  .main {
+    width: 100% !important;
+    margin: 0;
+  }
+}
+
+.main {
+  width: 80%;
+  backface-visibility: hidden;
+  margin-left: auto;
+}
+
+/* SCROLL TO TOP BUTTON */
+
+.scroll_top {
+  bottom: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroll_top:active {
+  transform: scale(0.95);
+}
+
+.scroll_top.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* END */
+
+/* my learning */
+.cards {
+  position: relative;
+}
+
+.cards span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background-color: #fff;
+  transition: all 600ms ease-in;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cards:hover span {
+  visibility: visible;
+  opacity: 1;
+}
