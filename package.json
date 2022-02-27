@@ -6,8 +6,13 @@
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o .src/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "tailwind-css"
+  ],
+  "author": "varun-rana",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.0.22"

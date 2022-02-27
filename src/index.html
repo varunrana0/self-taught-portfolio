@@ -10,7 +10,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon-32x32.png"
+      href="./logo/favicon-32x32.png"
     />
 
     <!-- FONT AWESOME LIBRARY -->
@@ -23,21 +23,28 @@
     />
 
     <!-- CUSTOM STYLESHEETS -->
-    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./css/index.css" />
 
     <!-- SITE TITLE -->
-    <title>Portfolio | Varun rana</title>
+    <title class="uppercase">Portfolio | Varun rana</title>
   </head>
   <body>
     <!-- SCROLL TO TOP BUTTON -->
     <div
-      class="scroll_top lg:fixed md:hidden bottom-10 right-10 bg-gray-800 text-yellow-600 p-2 rounded-sm cursor-pointer active:scale-75 transition-all duration-200"
+      class="scroll_top lg:fixed md:hidden bottom-10 right-10 text-yellow-600 rounded-sm cursor-pointer z-50"
     >
-      back to top
+      <i class="fas fa-up-long"></i>
     </div>
-
     <!-- END -->
+    <!-- navigation -->
+    <button
+      class="inline-flex fixed top-10 left-5 z-50 border p-2 rounded-md cursor-pointer active:scale-75 transition-all duration-200 lg:hidden font-medium tracking-wider"
+      data-target="navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
     <main class="w-full">
       <!-- SIDEBAR -->
       <aside class="sidebar md:fixed md:align-top bg-white z-40 gap-5 py-3">
@@ -47,16 +54,10 @@
               src="./logo/software-engineer.svg"
               width="70px"
               height="70px"
-              alt=""
+              alt="site_logo"
           /></a>
         </div>
 
-        <button
-          class="inline-flex fixed bottom-10 left-5 z-50 bg-gray-800 text-yellow-600 p-2 rounded-md cursor-pointer active:scale-75 transition-all duration-200 lg:hidden font-medium tracking-wider"
-          data-target="navigation"
-        >
-          Menu &mumap;
-        </button>
         <div
           class="h-auto lg:flex flex-col items-center justify-center hidden"
           id="navigation"
@@ -145,18 +146,20 @@
       <!-- =========================== HEADER =========================== -->
       <section class="main lg:align-top">
         <div id="particles-js" class="relative">
-          <header class="header lg:p-8 p-4 z-30">
-            <div class="flex flex-col items-center w-full p-4">
-              <div>
-                <h2 class="text-white font-black capitalize tracking-wide">
-                  varun rana
-                </h2>
-              </div>
-              <div>
-                <small class="text-white tracking-widest text-base capitalize"
-                  >Self-Taught developer</small
-                >
-              </div>
+          <header
+            class="header lg:p-8 z-10 flex flex-col items-center justify-center w-full h-full"
+          >
+            <div>
+              <h2
+                class="text-white font-black capitalize tracking-wide md:text-7xl text-6xl"
+              >
+                varun rana
+              </h2>
+            </div>
+            <div>
+              <small class="text-white tracking-widest text-base capitalize"
+                >Self-Taught developer</small
+              >
             </div>
           </header>
           <!-- ======================================== END ======================================= -->
@@ -174,23 +177,25 @@
             <div class="container max-w-lg px-6 py-8 mx-auto">
               <div class="items-center lg:flex justify-center gap-10">
                 <div class="w-full h-full">
-                  <h2
-                    class="text-3xl font-bold text-gray-800 dark:text-gray-100 capitalize"
-                  >
-                    Who I am
-                  </h2>
+                  <div class="">
+                    <h2
+                      class="text-3xl font-bold text-gray-800 dark:text-gray-100 capitalize"
+                    >
+                      Who I am
+                    </h2>
 
-                  <p
-                    class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md capitalize font-medium tracking-wide"
-                  >
-                    Hi I am Varun, self-taught full stack web developer & UI/UX
-                    designer, Feel free to take a look at my work in
-                    <a
-                      href="#projects"
-                      class="text-yellow-600 font-semibold tracking-wide underline"
-                      >projects section below</a
-                    >.
-                  </p>
+                    <p
+                      class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md capitalize font-medium tracking-wide"
+                    >
+                      Hi I am Varun, self-taught full stack web developer &
+                      UI/UX designer, Feel free to take a look at my work in
+                      <a
+                        href="#projects"
+                        class="text-yellow-600 font-semibold tracking-wide underline"
+                        >projects section below</a
+                      >.
+                    </p>
+                  </div>
 
                   <div class="inline-flex items-center gap-10 mt-10">
                     <a
@@ -227,7 +232,7 @@
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
-                  <div class="mt-4">
+                  <div class="mt-10">
                     <a
                       href="#contact"
                       class="bg-yellow-600 text-white capitalize font-semibold p-2 border-none outline-none"
@@ -388,7 +393,7 @@
                     <img
                       src="./dp/elitevibes.netlify.app.png"
                       class="w-full h-full object-cover overflow-hidden"
-                      alt="elite vibes event management"
+                      alt="elite vibes management company"
                     />
                   </a>
                 </div>
@@ -398,34 +403,35 @@
                   >
                     elite vibes an event management company
                   </div>
-                  <div class="flex items justify-start mt-5 capitalize">
+                  <div class="flex items justify-start gap-1 mt-5 capitalize">
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       html
                     </p>
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       css
                     </p>
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       javascript
                     </p>
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       tailwind-css
                     </p>
                   </div>
-                  <div class="mt-10">
+                  <div class="mt-10 flex">
                     <a
                       href="https://elitevibes.netlify.app/"
-                      class="bg-yellow-600 text-white font-medium py-1 px-2"
+                      target="_blank"
+                      class="bg-yellow-600 text-white rounded-sm font-medium p-2 tracking-wider"
                       >View Site</a
-                    ><a href=""></a>
+                    >
                   </div>
                 </div>
               </div>
@@ -440,7 +446,7 @@
                     <img
                       src="./dp/get-random-jokes.netlify.app_.png"
                       class="w-full h-full object-cover"
-                      alt="elite vibes event management"
+                      alt="Get-Random-Jokes"
                     />
                   </a>
                 </div>
@@ -450,19 +456,19 @@
                   >
                     get-random-jokes
                   </div>
-                  <div class="flex items justify-start mt-5 capitalize">
+                  <div class="flex items justify-start gap-1 mt-5 capitalize">
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       html
                     </p>
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       css
                     </p>
                     <p
-                      class="tracking-wide bg-gray-100 text-xs font-medium border p-1"
+                      class="tracking-wider md:text-base font-medium border p-1"
                     >
                       javascript
                     </p>
@@ -470,13 +476,13 @@
                   <div class="mt-10 flex gap-5">
                     <a
                       href="https://get-random-jokes.netlify.app/"
-                      class="bg-yellow-600 text-white font-medium py-1 px-2"
+                      class="bg-yellow-600 text-white font-medium p-2 rounded-sm tracking-wider"
                       >View Site</a
                     ><a
                       href="https://github.com/varunrana123/Get-Random-Jokes"
                       target="_blank"
-                      class="bg-yellow-600 text-white font-medium py-1 px-2"
-                      >View Source Code</a
+                      class="bg-yellow-600 text-white font-medium p-2 rounded-sm tracking-wider"
+                      >Source Code</a
                     >
                   </div>
                 </div>
@@ -485,13 +491,72 @@
           </div>
         </section>
 
+        <!-- =========================== CONTACT  =========================== -->
+
+        <section class="relative border-b" id="contact">
+          <div
+            class="text-center text-base absolute top-0 left-0 bg-yellow-600 text-white font-medium tracking-widest capitalize p-3 rounded-br-lg"
+          >
+            contact
+          </div>
+          <div class="py-32 form_container">
+            <form class="flex flex-col items-start justify-start gap-10">
+              <div
+                class="text-center text-2xl tracking-wide font-black text-yellow-600 capitalize"
+              >
+                let's talk
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder=" name"
+                  class="border w-full rounded-sm p-4 font-medium text-inherit"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-group flex items-center justify-center">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder=" email"
+                  class="border w-full rounded-sm p-4 font-medium text-inherit"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="input-group flex items-center justify-center">
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="message"
+                  class="border w-full rounded-sm p-4 font-medium text-inherit resize-y"
+                  autocomplete="off"
+                  required
+                ></textarea>
+              </div>
+              <div class="input-group mt-4">
+                <button
+                  type="submit"
+                  class="border py-1 px-5 text-inherit bg-yellow-600 text-white text-lg rounded-sm focus:outline-none capitalize font-medium tracking-wide"
+                >
+                  send
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- =========================== END =========================== -->
+
         <!-- ============================ FOOTER =========================== -->
         <footer>
           <div class="p-5">
             <div
-              class="flex items-center justify-center text-gray-600 tracking-wider"
+              class="flex items-center justify-center text-gray-600 font-medium text-center text-sm tracking-wider capitalize"
             >
-              © 2022, All Rights Reserved Self Taught Varun Rana
+              &copy; 2022, All Rights Reserved Self-Taught Varun Rana
             </div>
           </div>
         </footer>

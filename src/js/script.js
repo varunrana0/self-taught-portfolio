@@ -26,3 +26,5 @@ const navigatedUl = document.querySelector("#navigation");
 toggleButton.addEventListener("click", function () {
   navigatedUl.classList.toggle("show");
 });
+
+window.addEventListener("onLoad", () => {});

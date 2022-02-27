@@ -81,23 +81,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
   backdrop-filter: blur(3px);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
 .header h2 {
-  font-size: 6rem;
+  font-family: "Cinzel", serif;
 }
 /* site logo font family */
 .navbar h3 {
-  font-family: "Cinzel", serif;
   color: #000;
 }
 
@@ -125,17 +116,13 @@ body {
 /* SCROLL TO TOP BUTTON */
 
 .scroll_top {
-  bottom: 100%;
-  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.3rem;
+  padding: 0.5rem 0.7rem;
   visibility: hidden;
   opacity: 0;
-}
-
-.scroll_top:active {
-  transform: scale(0.95);
 }
 
 .scroll_top.active {
@@ -180,11 +167,33 @@ body {
   opacity: 1;
 }
 
+/* contact styling */
+
+#contact form {
+  /* background-color: #eeee; */
+  padding: 1.5rem;
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #eeeeee;
+  border-top-right-radius: 30px;
+  border-left-width: 1rem;
+  border-left-color: #eeee;
+}
+
+input:focus,
+textarea:focus,
+textarea:active,
+input:active {
+  transition: all 0.2s ease;
+  border-color: #eca407;
+  outline: none;
+}
+
 /* media queries */
 
 @media screen and (max-width: 1024px) {
   #particles-js {
-    height: 100vh;
     width: 100%;
   }
 
@@ -193,10 +202,6 @@ body {
     height: auto;
     position: fixed;
     top: 0;
-  }
-
-  .header h2 {
-    font-size: 3.3em;
   }
 
   .main {
