@@ -191,14 +191,9 @@ input:active {
 /* media queries */
 
 @media screen and (max-width: 1024px) {
-  #particles-js {
-    width: 100%;
-  }
-
   .sidebar {
     width: 100%;
-    height: auto;
-    position: fixed;
+    position: sticky;
     top: 0;
   }
 
