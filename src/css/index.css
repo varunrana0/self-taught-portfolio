@@ -171,23 +171,6 @@ body {
   opacity: 1;
 }
 
-/* contact styling */
-
-#contact form {
-  max-width: 450px;
-  width: 100%;
-  margin: auto;
-}
-
-input:focus,
-textarea:focus,
-textarea:active,
-input:active {
-  transition: all 0.2s ease;
-  border-color: #eca407;
-  outline: none;
-}
-
 /* media queries */
 
 @media screen and (max-width: 1024px) {
